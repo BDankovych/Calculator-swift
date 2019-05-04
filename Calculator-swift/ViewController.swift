@@ -148,7 +148,12 @@ extension ViewController: ButtonsViewDelegate {
             firstOperand = first * second
         }
         isFirstSymbol = true
-        display(result: firstOperand!)
+        if firstOperand == .infinity || firstOperand == -.infinity {
+            showAlert(withText: CalculatorErrors.resultToBig.rawValue)
+        } else {
+            display(result: firstOperand!)
+        }
+        
         firstOperand = nil
     }
     

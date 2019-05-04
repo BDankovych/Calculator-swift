@@ -2,7 +2,7 @@ import UIKit
 
 class RoundedButton: UIButton {
     
-    @IBInspectable var cornerRadius: CGFloat = 4.0
+    @IBInspectable var cornerRadius: CGFloat = 5.0
     @IBInspectable var borderWidth: CGFloat = 0
     @IBInspectable var borderColor: UIColor = .clear
     
