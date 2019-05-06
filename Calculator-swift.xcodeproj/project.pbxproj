@@ -16,6 +16,7 @@
 		3D689DCE227D95B00076E475 /* ButtonsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D689DCD227D95B00076E475 /* ButtonsView.xib */; };
 		3D689DD0227D95C20076E475 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D689DCF227D95C20076E475 /* BaseView.swift */; };
 		3D689DD2227D96240076E475 /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D689DD1227D96240076E475 /* ButtonsView.swift */; };
+		3D8196CA2280C0AC002CF3EA /* CopyableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8196C92280C0AC002CF3EA /* CopyableLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3D689DCD227D95B00076E475 /* ButtonsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonsView.xib; sourceTree = "<group>"; };
 		3D689DCF227D95C20076E475 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		3D689DD1227D96240076E475 /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		3D8196C92280C0AC002CF3EA /* CopyableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		3D689DC8227D94F70076E475 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D8196C82280C096002CF3EA /* New Group */,
 				3D689DCF227D95C20076E475 /* BaseView.swift */,
 				3D689DC9227D95030076E475 /* RoundedButton */,
 			);
@@ -106,6 +109,14 @@
 				3D689DD1227D96240076E475 /* ButtonsView.swift */,
 			);
 			path = ButtonsView;
+			sourceTree = "<group>";
+		};
+		3D8196C82280C096002CF3EA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				3D8196C92280C0AC002CF3EA /* CopyableLabel.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				3D689DB6227D93EC0076E475 /* AppDelegate.swift in Sources */,
 				3D689DCB227D95680076E475 /* RoundedButton.swift in Sources */,
 				3D689DD0227D95C20076E475 /* BaseView.swift in Sources */,
+				3D8196CA2280C0AC002CF3EA /* CopyableLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,8 +342,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CSW96NV9;
 				INFOPLIST_FILE = "Calculator-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -349,8 +362,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CSW96NV9;
 				INFOPLIST_FILE = "Calculator-swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10i-4i-Vk1" userLabel="Actions">
-                    <rect key="frame" x="0.0" y="20" width="310.66666666666669" height="139"/>
+                    <rect key="frame" x="0.0" y="20" width="281.5" height="122"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-bf-x6n" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="0.0" width="93.666666666666671" height="139"/>
+                            <rect key="frame" x="5" y="0.0" width="84" height="122"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal" title="AC">
@@ -38,7 +38,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-ka-LlN" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="108.66666666666669" y="0.0" width="93.333333333333314" height="139"/>
+                            <rect key="frame" x="99" y="0.0" width="83.5" height="122"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal" title="±">
@@ -49,7 +49,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8u-3n-Bj3" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="211.99999999999997" y="0.0" width="93.666666666666657" height="139"/>
+                            <rect key="frame" x="192.5" y="0.0" width="84" height="122"/>
                             <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal" title="⬅︎">
@@ -62,6 +62,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstAttribute="trailing" secondItem="L8u-3n-Bj3" secondAttribute="trailing" constant="5" id="1Vo-VQ-jtP"/>
                         <constraint firstItem="ei6-bf-x6n" firstAttribute="leading" secondItem="10i-4i-Vk1" secondAttribute="leading" constant="5" id="2KP-10-h3q"/>
                         <constraint firstItem="ei6-bf-x6n" firstAttribute="centerY" secondItem="zeo-ka-LlN" secondAttribute="centerY" id="I74-as-J31"/>
                         <constraint firstItem="ei6-bf-x6n" firstAttribute="height" secondItem="zeo-ka-LlN" secondAttribute="height" id="L09-vV-8bY"/>
@@ -75,12 +76,23 @@
                         <constraint firstItem="L8u-3n-Bj3" firstAttribute="leading" secondItem="zeo-ka-LlN" secondAttribute="trailing" constant="10" id="nEX-oG-Onh"/>
                         <constraint firstItem="L8u-3n-Bj3" firstAttribute="centerY" secondItem="zeo-ka-LlN" secondAttribute="centerY" id="xke-Jx-Dx0"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1Vo-VQ-jtP"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1Vo-VQ-jtP"/>
+                            <exclude reference="mnZ-P0-BEa"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nv-SN-w96" userLabel="operations">
-                    <rect key="frame" x="310.66666666666669" y="20" width="103.33333333333331" height="716"/>
+                    <rect key="frame" x="281.5" y="20" width="93.5" height="647"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apa-1p-OiD" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="143.33333333333334" width="93.333333333333329" height="133.00000000000003"/>
+                            <rect key="frame" x="5" y="129.5" width="83.5" height="119.5"/>
                             <color key="backgroundColor" red="0.91869050259999996" green="0.54931593649999999" blue="0.29081011280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal">
@@ -91,7 +103,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXg-cG-iY4" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="286.33333333333331" width="93.333333333333329" height="133.33333333333331"/>
+                            <rect key="frame" x="5" y="259" width="83.5" height="119"/>
                             <color key="backgroundColor" red="0.91869050259999996" green="0.54931593649999999" blue="0.29081011280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal">
@@ -102,7 +114,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1G-sS-d1G" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="572.66666666666663" width="93.333333333333329" height="133.33333333333337"/>
+                            <rect key="frame" x="5" y="517.5" width="83.5" height="119.5"/>
                             <color key="backgroundColor" red="0.91869050259999996" green="0.54931593649999999" blue="0.29081011280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal" title="=">
@@ -113,7 +125,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPN-78-qQL" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="0.0" width="93.333333333333329" height="133.33333333333334"/>
+                            <rect key="frame" x="5" y="0.0" width="83.5" height="119.5"/>
                             <color key="backgroundColor" red="0.91869050259999996" green="0.54931593649999999" blue="0.29081011280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal">
@@ -124,7 +136,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcK-UF-3aB" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                            <rect key="frame" x="5" y="429.66666666666669" width="93.333333333333329" height="133.00000000000006"/>
+                            <rect key="frame" x="5" y="388" width="83.5" height="119.5"/>
                             <color key="backgroundColor" red="0.91869050259999996" green="0.54931593649999999" blue="0.29081011280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                             <state key="normal">
@@ -138,23 +150,34 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Apa-1p-OiD" secondAttribute="trailing" constant="5" id="0t8-q6-mPo"/>
+                        <constraint firstItem="Apa-1p-OiD" firstAttribute="width" secondItem="GPN-78-qQL" secondAttribute="width" id="12l-Jm-aQ6"/>
                         <constraint firstAttribute="bottom" secondItem="m1G-sS-d1G" secondAttribute="bottom" constant="10" id="1FK-FX-h8a"/>
                         <constraint firstAttribute="trailing" secondItem="UXg-cG-iY4" secondAttribute="trailing" id="1k5-8h-MUc">
                             <variation key="heightClass=compact-widthClass=regular" constant="5"/>
                         </constraint>
+                        <constraint firstItem="ZcK-UF-3aB" firstAttribute="top" secondItem="GPN-78-qQL" secondAttribute="bottom" constant="10" id="3XL-zn-IqK"/>
                         <constraint firstItem="UXg-cG-iY4" firstAttribute="height" secondItem="ZcK-UF-3aB" secondAttribute="height" id="3en-CP-Ybp"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="trailing" secondItem="Apa-1p-OiD" secondAttribute="trailing" id="4FF-Ks-Rhy"/>
                         <constraint firstItem="Apa-1p-OiD" firstAttribute="leading" secondItem="GPN-78-qQL" secondAttribute="trailing" constant="10" id="4Fq-zL-8WX"/>
                         <constraint firstItem="Apa-1p-OiD" firstAttribute="top" secondItem="GPN-78-qQL" secondAttribute="bottom" constant="10" id="4dA-Wb-G9v"/>
                         <constraint firstItem="UXg-cG-iY4" firstAttribute="leading" secondItem="ZcK-UF-3aB" secondAttribute="trailing" constant="10" id="5cp-Fh-BgO"/>
+                        <constraint firstItem="GPN-78-qQL" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="5ij-ms-xZA"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="width" secondItem="Apa-1p-OiD" secondAttribute="width" id="5nk-Iw-1g7"/>
                         <constraint firstAttribute="trailing" secondItem="m1G-sS-d1G" secondAttribute="trailing" constant="5" id="7E7-bO-Vag"/>
                         <constraint firstItem="UXg-cG-iY4" firstAttribute="top" secondItem="Apa-1p-OiD" secondAttribute="bottom" constant="10" id="8YE-C4-QnO"/>
+                        <constraint firstItem="m1G-sS-d1G" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="8ah-ff-2jP"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="width" secondItem="Apa-1p-OiD" secondAttribute="width" id="Adi-CI-qL1"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="centerX" secondItem="m1G-sS-d1G" secondAttribute="centerX" id="Asf-yN-uv0"/>
                         <constraint firstAttribute="bottom" secondItem="m1G-sS-d1G" secondAttribute="bottom" constant="10" id="DnI-ay-kEJ"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="top" secondItem="4nv-SN-w96" secondAttribute="top" constant="10" id="E5W-Kc-f7S"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="top" secondItem="UXg-cG-iY4" secondAttribute="bottom" constant="10" id="FjX-0U-GXC"/>
+                        <constraint firstItem="ZcK-UF-3aB" firstAttribute="height" secondItem="UXg-cG-iY4" secondAttribute="height" id="IpF-Xn-7Ph"/>
+                        <constraint firstItem="ZcK-UF-3aB" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="J48-K4-Qk3"/>
+                        <constraint firstItem="GPN-78-qQL" firstAttribute="top" secondItem="4nv-SN-w96" secondAttribute="top" constant="5" id="JO1-1l-8jr">
+                            <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                        </constraint>
+                        <constraint firstAttribute="trailing" secondItem="m1G-sS-d1G" secondAttribute="trailing" constant="5" id="JUV-je-hiR"/>
+                        <constraint firstItem="Apa-1p-OiD" firstAttribute="height" secondItem="GPN-78-qQL" secondAttribute="height" id="KHY-xv-hzQ"/>
                         <constraint firstItem="Apa-1p-OiD" firstAttribute="centerX" secondItem="UXg-cG-iY4" secondAttribute="centerX" id="L9p-Mz-gpl"/>
                         <constraint firstItem="m1G-sS-d1G" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="LX8-4l-aYO"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="height" secondItem="m1G-sS-d1G" secondAttribute="height" id="Ljz-Da-AZz"/>
@@ -162,7 +185,11 @@
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="width" secondItem="UXg-cG-iY4" secondAttribute="width" id="Ofz-bo-hzz"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="height" secondItem="m1G-sS-d1G" secondAttribute="height" id="Omm-0p-GAc"/>
                         <constraint firstItem="Apa-1p-OiD" firstAttribute="height" secondItem="UXg-cG-iY4" secondAttribute="height" id="OzK-lL-aLa"/>
+                        <constraint firstItem="Apa-1p-OiD" firstAttribute="centerY" secondItem="GPN-78-qQL" secondAttribute="centerY" id="Php-kt-5HF"/>
+                        <constraint firstItem="GPN-78-qQL" firstAttribute="height" secondItem="ZcK-UF-3aB" secondAttribute="height" id="Piy-dd-TSf"/>
+                        <constraint firstAttribute="trailing" secondItem="Apa-1p-OiD" secondAttribute="trailing" constant="5" id="Q5t-Qp-PzQ"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="centerY" secondItem="Apa-1p-OiD" secondAttribute="centerY" id="QFD-Ls-UmC"/>
+                        <constraint firstItem="UXg-cG-iY4" firstAttribute="leading" secondItem="ZcK-UF-3aB" secondAttribute="trailing" constant="10" id="S99-b4-QrE"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="top" secondItem="4nv-SN-w96" secondAttribute="top" id="So9-Sv-zap">
                             <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                         </constraint>
@@ -172,24 +199,33 @@
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="aHm-zc-Mjt"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="centerY" secondItem="UXg-cG-iY4" secondAttribute="centerY" id="adv-eF-Zx8"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="cte-q7-0Ic"/>
+                        <constraint firstItem="Apa-1p-OiD" firstAttribute="leading" secondItem="GPN-78-qQL" secondAttribute="trailing" constant="10" id="dbY-yH-4St"/>
                         <constraint firstItem="m1G-sS-d1G" firstAttribute="leading" secondItem="4nv-SN-w96" secondAttribute="leading" constant="5" id="dfo-TB-JZp"/>
                         <constraint firstItem="m1G-sS-d1G" firstAttribute="top" secondItem="ZcK-UF-3aB" secondAttribute="bottom" constant="10" id="f4H-7P-Ygg"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="top" secondItem="4nv-SN-w96" secondAttribute="top" constant="10" id="ive-ow-g2e"/>
+                        <constraint firstAttribute="trailing" secondItem="UXg-cG-iY4" secondAttribute="trailing" constant="5" id="jGx-eo-y3l"/>
                         <constraint firstItem="ZcK-UF-3aB" firstAttribute="top" secondItem="GPN-78-qQL" secondAttribute="bottom" constant="10" id="kvm-nn-lLQ"/>
                         <constraint firstAttribute="trailing" secondItem="m1G-sS-d1G" secondAttribute="trailing" constant="5" id="meR-ox-N7v"/>
+                        <constraint firstItem="ZcK-UF-3aB" firstAttribute="height" secondItem="m1G-sS-d1G" secondAttribute="height" id="oGl-M1-ptr"/>
+                        <constraint firstItem="GPN-78-qQL" firstAttribute="width" secondItem="ZcK-UF-3aB" secondAttribute="width" id="p5E-0a-m46"/>
+                        <constraint firstItem="m1G-sS-d1G" firstAttribute="top" secondItem="ZcK-UF-3aB" secondAttribute="bottom" constant="10" id="pFa-Yi-5sJ"/>
                         <constraint firstItem="m1G-sS-d1G" firstAttribute="top" secondItem="ZcK-UF-3aB" secondAttribute="bottom" constant="10" id="rpj-tM-clf"/>
                         <constraint firstItem="UXg-cG-iY4" firstAttribute="centerX" secondItem="ZcK-UF-3aB" secondAttribute="centerX" id="u4w-Et-Xaq"/>
                         <constraint firstItem="Apa-1p-OiD" firstAttribute="width" secondItem="UXg-cG-iY4" secondAttribute="width" id="uVr-uE-yVX"/>
+                        <constraint firstItem="ZcK-UF-3aB" firstAttribute="width" secondItem="UXg-cG-iY4" secondAttribute="width" id="vsh-Kb-D2P"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="height" secondItem="Apa-1p-OiD" secondAttribute="height" id="wR3-a8-Qjm"/>
                         <constraint firstItem="GPN-78-qQL" firstAttribute="top" secondItem="4nv-SN-w96" secondAttribute="top" constant="10" id="xeh-tw-Q9w"/>
                         <constraint firstItem="UXg-cG-iY4" firstAttribute="width" secondItem="ZcK-UF-3aB" secondAttribute="width" id="yv0-7L-u3s"/>
+                        <constraint firstItem="UXg-cG-iY4" firstAttribute="centerY" secondItem="ZcK-UF-3aB" secondAttribute="centerY" id="z4I-qJ-0W7"/>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="4FF-Ks-Rhy"/>
+                            <exclude reference="5ij-ms-xZA"/>
                             <exclude reference="5nk-Iw-1g7"/>
                             <exclude reference="Adi-CI-qL1"/>
                             <exclude reference="E5W-Kc-f7S"/>
+                            <exclude reference="JO1-1l-8jr"/>
                             <exclude reference="QFD-Ls-UmC"/>
                             <exclude reference="So9-Sv-zap"/>
                             <exclude reference="XsU-KD-izs"/>
@@ -197,8 +233,11 @@
                             <exclude reference="ive-ow-g2e"/>
                             <exclude reference="wR3-a8-Qjm"/>
                             <exclude reference="xeh-tw-Q9w"/>
+                            <exclude reference="3XL-zn-IqK"/>
                             <exclude reference="Asf-yN-uv0"/>
                             <exclude reference="FjX-0U-GXC"/>
+                            <exclude reference="IpF-Xn-7Ph"/>
+                            <exclude reference="J48-K4-Qk3"/>
                             <exclude reference="Ljz-Da-AZz"/>
                             <exclude reference="Ofz-bo-hzz"/>
                             <exclude reference="Omm-0p-GAc"/>
@@ -206,27 +245,62 @@
                             <exclude reference="aHm-zc-Mjt"/>
                             <exclude reference="adv-eF-Zx8"/>
                             <exclude reference="kvm-nn-lLQ"/>
+                            <exclude reference="oGl-M1-ptr"/>
+                            <exclude reference="vsh-Kb-D2P"/>
                             <exclude reference="0t8-q6-mPo"/>
+                            <exclude reference="12l-Jm-aQ6"/>
                             <exclude reference="4Fq-zL-8WX"/>
                             <exclude reference="4dA-Wb-G9v"/>
+                            <exclude reference="KHY-xv-hzQ"/>
                             <exclude reference="L9p-Mz-gpl"/>
                             <exclude reference="OYH-1J-k2a"/>
                             <exclude reference="OzK-lL-aLa"/>
+                            <exclude reference="Php-kt-5HF"/>
+                            <exclude reference="Q5t-Qp-PzQ"/>
+                            <exclude reference="dbY-yH-4St"/>
                             <exclude reference="uVr-uE-yVX"/>
                             <exclude reference="1k5-8h-MUc"/>
                             <exclude reference="3en-CP-Ybp"/>
                             <exclude reference="5cp-Fh-BgO"/>
                             <exclude reference="8YE-C4-QnO"/>
+                            <exclude reference="S99-b4-QrE"/>
                             <exclude reference="Xmi-HN-1uv"/>
+                            <exclude reference="jGx-eo-y3l"/>
                             <exclude reference="u4w-Et-Xaq"/>
                             <exclude reference="yv0-7L-u3s"/>
+                            <exclude reference="z4I-qJ-0W7"/>
                             <exclude reference="1FK-FX-h8a"/>
                             <exclude reference="7E7-bO-Vag"/>
+                            <exclude reference="8ah-ff-2jP"/>
+                            <exclude reference="JUV-je-hiR"/>
                             <exclude reference="LX8-4l-aYO"/>
                             <exclude reference="dfo-TB-JZp"/>
                             <exclude reference="f4H-7P-Ygg"/>
                             <exclude reference="meR-ox-N7v"/>
+                            <exclude reference="pFa-Yi-5sJ"/>
                             <exclude reference="rpj-tM-clf"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5ij-ms-xZA"/>
+                            <include reference="JO1-1l-8jr"/>
+                            <include reference="3XL-zn-IqK"/>
+                            <include reference="IpF-Xn-7Ph"/>
+                            <include reference="J48-K4-Qk3"/>
+                            <include reference="oGl-M1-ptr"/>
+                            <include reference="vsh-Kb-D2P"/>
+                            <include reference="12l-Jm-aQ6"/>
+                            <include reference="KHY-xv-hzQ"/>
+                            <include reference="Php-kt-5HF"/>
+                            <include reference="Q5t-Qp-PzQ"/>
+                            <include reference="dbY-yH-4St"/>
+                            <include reference="S99-b4-QrE"/>
+                            <include reference="jGx-eo-y3l"/>
+                            <include reference="z4I-qJ-0W7"/>
+                            <include reference="8ah-ff-2jP"/>
+                            <include reference="JUV-je-hiR"/>
+                            <include reference="pFa-Yi-5sJ"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=compact-widthClass=regular">
@@ -281,111 +355,141 @@
                     </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ype-ir-ruu" userLabel="numbers">
-                    <rect key="frame" x="0.0" y="169" width="310.66666666666669" height="567"/>
+                    <rect key="frame" x="0.0" y="152" width="281.5" height="515"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tp8-Vj-xlV">
-                            <rect key="frame" x="5" y="0.0" width="300.66666666666669" height="557"/>
+                            <rect key="frame" x="5" y="0.0" width="271.5" height="505"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Ka-LL-0rd">
-                                    <rect key="frame" x="0.0" y="0.0" width="300.66666666666669" height="131.66666666666666"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="271.5" height="118.5"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8S-Ta-MsD" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="131.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="7">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="JDj-Gk-xNN"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tc-Jd-Nvn" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="103.66666666666669" y="0.0" width="93.333333333333314" height="131.66666666666666"/>
+                                            <rect key="frame" x="94" y="0.0" width="83.5" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="8">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="kg2-xw-rom"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxF-MQ-3Cg" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="207" y="0.0" width="93.666666666666686" height="131.66666666666666"/>
+                                            <rect key="frame" x="187.5" y="0.0" width="84" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="9">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="KIK-8k-cl1"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1CP-A7-4OH">
-                                    <rect key="frame" x="0.0" y="141.66666666666669" width="300.66666666666669" height="132"/>
+                                    <rect key="frame" x="0.0" y="128.5" width="271.5" height="119"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk8-el-rZV" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="132"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="119"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="4">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="t34-rC-Jun"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngs-W9-v57" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="103.66666666666669" y="0.0" width="93.333333333333314" height="132"/>
+                                            <rect key="frame" x="94" y="0.0" width="83.5" height="119"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="5">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="2FN-wN-nXC"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvK-B5-rAV" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="207" y="0.0" width="93.666666666666686" height="132"/>
+                                            <rect key="frame" x="187.5" y="0.0" width="84" height="119"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="6">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="urq-Jb-QkJ"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7wx-EV-Xtw">
-                                    <rect key="frame" x="0.0" y="283.66666666666669" width="300.66666666666669" height="131.66666666666669"/>
+                                    <rect key="frame" x="0.0" y="257.5" width="271.5" height="118.5"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myC-G9-hP6" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="131.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="84" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="1">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="AAJ-0T-4ZB"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTz-Sa-Nis" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="103.66666666666669" y="0.0" width="93.333333333333314" height="131.66666666666666"/>
+                                            <rect key="frame" x="94" y="0.0" width="83.5" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="2">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="Zma-Uq-CDf"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRc-ZO-1Hn" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="207" y="0.0" width="93.666666666666686" height="131.66666666666666"/>
+                                            <rect key="frame" x="187.5" y="0.0" width="84" height="118.5"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="3">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="2Eq-Jg-sUB"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c85-xL-GQD">
-                                    <rect key="frame" x="0.0" y="425.33333333333337" width="300.66666666666669" height="131.66666666666663"/>
+                                    <rect key="frame" x="0.0" y="386" width="271.5" height="119"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-Ka-Paq" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="197" height="131.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="177.5" height="119"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title="0">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </state>
+                                            <connections>
+                                                <action selector="numberPressed:" destination="-1" eventType="touchUpInside" id="wAR-xF-3vr"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmL-Ne-Ilt" customClass="RoundedButton" customModule="Calculator_swift" customModuleProvider="target">
-                                            <rect key="frame" x="207" y="0.0" width="93.666666666666686" height="131.66666666666666"/>
+                                            <rect key="frame" x="187.5" y="0.0" width="84" height="119"/>
                                             <color key="backgroundColor" red="0.23921568630000001" green="0.23921568630000001" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                             <state key="normal" title=".">
@@ -415,9 +519,21 @@
                     <constraints>
                         <constraint firstItem="tp8-Vj-xlV" firstAttribute="leading" secondItem="ype-ir-ruu" secondAttribute="leading" constant="5" id="LFw-Na-KCM"/>
                         <constraint firstAttribute="trailing" secondItem="tp8-Vj-xlV" secondAttribute="trailing" constant="5" id="Qgu-A0-Vl5"/>
+                        <constraint firstItem="tp8-Vj-xlV" firstAttribute="top" secondItem="ype-ir-ruu" secondAttribute="top" id="U3m-5P-GcV"/>
                         <constraint firstAttribute="bottom" secondItem="tp8-Vj-xlV" secondAttribute="bottom" constant="10" id="Z0q-FP-bhO"/>
                         <constraint firstItem="tp8-Vj-xlV" firstAttribute="top" secondItem="ype-ir-ruu" secondAttribute="top" id="qZL-t1-mSG"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="U3m-5P-GcV"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="U3m-5P-GcV"/>
+                            <exclude reference="qZL-t1-mSG"/>
+                        </mask>
+                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -426,10 +542,15 @@
                 <constraint firstItem="10i-4i-Vk1" firstAttribute="height" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="0.25" id="17o-Cu-hac">
                     <variation key="heightClass=regular-widthClass=compact" constant="-40"/>
                 </constraint>
+                <constraint firstItem="ype-ir-ruu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1XR-gN-npT"/>
+                <constraint firstItem="4nv-SN-w96" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.4" id="4hW-5R-SZy"/>
                 <constraint firstItem="4nv-SN-w96" firstAttribute="top" secondItem="10i-4i-Vk1" secondAttribute="bottom" id="6LQ-9V-296"/>
                 <constraint firstItem="ype-ir-ruu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6ho-Ap-nbT"/>
+                <constraint firstItem="4nv-SN-w96" firstAttribute="top" secondItem="10i-4i-Vk1" secondAttribute="bottom" id="8T4-yk-upQ"/>
+                <constraint firstAttribute="bottom" secondItem="ype-ir-ruu" secondAttribute="bottom" id="Bja-JS-Yqw"/>
                 <constraint firstItem="4nv-SN-w96" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.4" id="EHY-cC-yRG"/>
                 <constraint firstAttribute="bottom" secondItem="ype-ir-ruu" secondAttribute="bottom" id="EIc-tf-tMO"/>
+                <constraint firstItem="10i-4i-Vk1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="GKJ-Uq-Le2"/>
                 <constraint firstItem="4nv-SN-w96" firstAttribute="leading" secondItem="ype-ir-ruu" secondAttribute="trailing" id="HRq-Dc-821"/>
                 <constraint firstItem="10i-4i-Vk1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KJj-kS-FI2"/>
                 <constraint firstItem="10i-4i-Vk1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="Mb7-nv-gZ2">
@@ -441,12 +562,16 @@
                 <constraint firstItem="ype-ir-ruu" firstAttribute="top" secondItem="10i-4i-Vk1" secondAttribute="bottom" id="Uw8-BZ-heC">
                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                 </constraint>
+                <constraint firstItem="10i-4i-Vk1" firstAttribute="width" secondItem="4nv-SN-w96" secondAttribute="width" id="WSx-X6-1EQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="10i-4i-Vk1" secondAttribute="trailing" id="ZZp-N0-ZsA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="10i-4i-Vk1" secondAttribute="bottom" id="cgM-Ng-88l"/>
                 <constraint firstItem="ype-ir-ruu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eHv-OM-EEx">
                     <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                 </constraint>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ype-ir-ruu" secondAttribute="bottom" id="ebj-GK-QHK"/>
+                <constraint firstAttribute="trailing" secondItem="4nv-SN-w96" secondAttribute="trailing" id="eck-06-SIq"/>
                 <constraint firstItem="4nv-SN-w96" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="width" multiplier="0.25" id="fHs-Qt-VqF"/>
+                <constraint firstItem="ype-ir-ruu" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="g67-kO-Ww7"/>
                 <constraint firstAttribute="trailing" secondItem="4nv-SN-w96" secondAttribute="trailing" id="gzs-Sc-5aw"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="10i-4i-Vk1" secondAttribute="trailing" id="ht8-3j-M3p"/>
                 <constraint firstAttribute="bottom" secondItem="4nv-SN-w96" secondAttribute="bottom" id="iXZ-Su-0bm"/>
@@ -455,6 +580,8 @@
                 <constraint firstItem="4nv-SN-w96" firstAttribute="top" secondItem="10i-4i-Vk1" secondAttribute="top" id="lhn-Jf-Tlj">
                     <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                 </constraint>
+                <constraint firstAttribute="bottom" secondItem="4nv-SN-w96" secondAttribute="bottom" id="rf8-L2-PQr"/>
+                <constraint firstItem="ype-ir-ruu" firstAttribute="top" secondItem="10i-4i-Vk1" secondAttribute="top" id="w3z-g0-X6F"/>
                 <constraint firstItem="10i-4i-Vk1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="x7Y-8l-DMW">
                     <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                 </constraint>
@@ -464,23 +591,52 @@
                 <mask key="constraints">
                     <exclude reference="0c3-Bn-gCG"/>
                     <exclude reference="SK4-n0-V8x"/>
+                    <exclude reference="ZZp-N0-ZsA"/>
                     <exclude reference="cgM-Ng-88l"/>
                     <exclude reference="ebj-GK-QHK"/>
                     <exclude reference="ht8-3j-M3p"/>
+                    <exclude reference="1XR-gN-npT"/>
                     <exclude reference="6ho-Ap-nbT"/>
+                    <exclude reference="Bja-JS-Yqw"/>
                     <exclude reference="EIc-tf-tMO"/>
                     <exclude reference="eHv-OM-EEx"/>
+                    <exclude reference="g67-kO-Ww7"/>
                     <exclude reference="jhd-tT-hZj"/>
+                    <exclude reference="w3z-g0-X6F"/>
+                    <exclude reference="GKJ-Uq-Le2"/>
                     <exclude reference="KJj-kS-FI2"/>
                     <exclude reference="Mb7-nv-gZ2"/>
                     <exclude reference="QVB-6g-RfQ"/>
+                    <exclude reference="WSx-X6-1EQ"/>
                     <exclude reference="izn-mH-N3O"/>
                     <exclude reference="x7Y-8l-DMW"/>
+                    <exclude reference="4hW-5R-SZy"/>
                     <exclude reference="6LQ-9V-296"/>
+                    <exclude reference="8T4-yk-upQ"/>
                     <exclude reference="EHY-cC-yRG"/>
+                    <exclude reference="eck-06-SIq"/>
                     <exclude reference="fHs-Qt-VqF"/>
                     <exclude reference="gzs-Sc-5aw"/>
                     <exclude reference="iXZ-Su-0bm"/>
+                    <exclude reference="rf8-L2-PQr"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="ZZp-N0-ZsA"/>
+                    <include reference="1XR-gN-npT"/>
+                    <include reference="Bja-JS-Yqw"/>
+                    <exclude reference="Uw8-BZ-heC"/>
+                    <include reference="g67-kO-Ww7"/>
+                    <exclude reference="w3z-g0-X6F"/>
+                    <include reference="GKJ-Uq-Le2"/>
+                    <include reference="WSx-X6-1EQ"/>
+                    <include reference="4hW-5R-SZy"/>
+                    <include reference="8T4-yk-upQ"/>
+                    <exclude reference="QHV-7R-hyM"/>
+                    <include reference="eck-06-SIq"/>
+                    <exclude reference="lhn-Jf-Tlj"/>
+                    <include reference="rf8-L2-PQr"/>
                 </mask>
             </variation>
             <variation key="heightClass=compact-widthClass=regular">
@@ -513,7 +669,7 @@
                     <include reference="gzs-Sc-5aw"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="244.41964285714283" y="355.07246376811599"/>
+            <point key="canvasLocation" x="244.22788605697153" y="354.39999999999998"/>
         </view>
     </objects>
 </document>
